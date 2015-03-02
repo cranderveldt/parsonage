@@ -1,0 +1,99 @@
+body {
+  background: #455057;
+}
+#header {
+  padding: 0 0 20px;
+  position: relative;
+  h1 {
+    @include font-size(120, 1);
+    text-shadow: 1px 1px 8px #777;
+    color: $blue;
+    text-align: center;
+    font-family: $cursive;
+    margin: 0;
+  }
+  h2 {
+    @include font-size(20, 1);
+    margin: -20px 0 20px;
+    font-family: $menu;
+    color: $blue;
+    text-align: center;
+  }
+  .bubble {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-family: $menu;
+    color: $blue;
+    @include font-size(20, 1.2);
+    background: #FFF;
+    @include round(75px);
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    right: 0;
+  }
+  nav {
+    background: #68b6da;
+    ul {
+      margin: 0;
+      text-align: center;
+    }
+    @include round(8px);
+    li {
+      display: inline;
+    }
+    a {
+      color: #FFF;
+      font-family: $menu;
+      @include font-size(20, 1);
+      @include inline-block(middle);
+      text-decoration: none;
+      padding: 10px 15px;
+      &:hover {
+        text-decoration: none;
+        background: #4e8fae;
+      }
+    }
+    // li:first-child a {
+    //   @include round(8px 0 0 8px);
+    // }
+  }
+}
+#container {
+  background: #d3f1ff;
+  @include max-width(940px);
+  margin: auto;
+  padding: 20px;
+  @include box-shadow(0 0 40px #000);
+}
+#content {
+  background: #FFF;
+  padding: 20px;
+  @include round(8px);
+  h3 {
+    @include font-size(50, 1);
+    margin: 0 0 15px;
+    font-family: $cursive;
+    color: $blue;
+  }
+  h4 {
+    @include font-size(16);
+    font-family: $menu;
+    margin: 0 0 15px;
+  }
+}
+#footer {
+  background: #4e8fae;
+  padding: 20px;
+  margin: 20px -20px -20px;
+  color: #223f4c;
+  text-align: center;
+  @include font-size(12);
+  a {
+    color: #0f1b21;
+  }
+  p {
+    margin: 0;
+  }
+}

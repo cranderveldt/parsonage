@@ -1,0 +1,6 @@
+.frontpage {
+  float: right;
+  margin: 0 0 10px 10px;
+  @include box-shadow(3px 3px 4px #AAA);
+  @include round(8px);
+}
