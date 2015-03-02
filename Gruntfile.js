@@ -10,13 +10,13 @@ module.exports = function(grunt) {
                     style: 'compressed'
                 },
                 files : {
-                    'css/styles.css':'sass/styles.scss'
+                    'wp-content/themes/parsonage/style.css':'wp-content/themes/parsonage/sass/styles.scss'
                 }
             }
         },
         watch: {
             sass: {
-                files: ['sass/*.scss'],
+                files: ['wp-content/themes/parsonage/sass/*.scss'],
                 tasks: ['sass:dev']
             }
         }
